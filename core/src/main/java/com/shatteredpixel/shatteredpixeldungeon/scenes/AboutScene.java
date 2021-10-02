@@ -72,9 +72,9 @@ public class AboutScene extends PixelScene {
 		shpxLink += "&utm_campaign=ingame_link";
 
 		CreditsBlock shpx = new CreditsBlock(true, Window.SHPX_COLOR,
-				"Shattered Pixel Dungeon",
+				"Glued Pixel Dungeon",
 				Icons.SHPX.get(),
-				"Developed by: _Evan Debenham_\nBased on Pixel Dungeon's open source",
+				"Developed by: _Abdul Isik_\nBased on Shattered Pixel Dungeon's open source",
 				"ShatteredPixel.com",
 				shpxLink);
 		if (landscape()){

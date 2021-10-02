@@ -9,14 +9,26 @@ buildscript {
     }
 }
 
+plugins {
+    id "org.sonarqube" version "3.3"
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "personal-test"
+        property "sonar.organization", "personal-test"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
+}
+
 allprojects {
 
     ext {
-        appName = 'Shattered Pixel Dungeon'
-        appPackageName = 'com.shatteredpixel.shatteredpixeldungeon'
+        appName = 'Glued Pixel Dungeon'
+        appPackageName = 'com.abdulisik.gluedpixeldungeon'
 
         appVersionCode = 574
-        appVersionName = '1.0.3'
+        appVersionName = '1.0.3.1'
 
         appJavaCompatibility = JavaVersion.VERSION_1_8
 
